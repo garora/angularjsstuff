@@ -3,9 +3,9 @@ var myApp = migrationModule.getModule();
 var baseUrl = migrationModule.getBasePath();
 
 
-myApp.factory("migrationRepository", function ($http) {
+angular.module('serverdatafactory', []).factory('migrationRepository', ['$http', function ($http) {
     var resource = "";
-    alert('hello!');
+    
     return {
         getServerDataList: function (callback) {
             resourcce = baseUrl + "/api/serverdata";
@@ -58,4 +58,4 @@ myApp.factory("migrationRepository", function ($http) {
         }
 
     };
-});
+}]);

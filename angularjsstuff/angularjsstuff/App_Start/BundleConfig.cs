@@ -16,14 +16,16 @@ namespace angularjsstuff
             //add angular support
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                 "~/Scripts/angular.js",
+                "~/Scripts/angular-route.js",
                 "~/Scripts/angular-resource.js",
                 "~/Scripts/ng-grid.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/datamigration").Include(
                 "~/Scripts/app/common.js",
-                "~/Scripts/app/serverdatafactory.js",
-                "~/Scripts/app/serverdatacontroller.js"
+                "~/Scripts/app/serverDataCtrl.js",
+                "~/Scripts/app/serverdatafactory.js"
+                
                 ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're

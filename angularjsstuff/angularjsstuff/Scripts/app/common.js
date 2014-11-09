@@ -7,7 +7,7 @@
     this.getBasePath = function () { return "http://crudwithwebapi.azurewebsites.net"; };
 
     this.getModule = function () {
-        return angular.module('migrationApp', ['ngGrid']);
+        return angular.module('migrationApp', []);
     };
 
 }
