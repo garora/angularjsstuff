@@ -2,10 +2,13 @@
     ViewBag.Title = "Server Data Operations";
 }
 
-<div class="jumbotron" ng-app="serverDataCtrl">
+<div class="jumbotron" ng-app="myApp">
     <h1>Data migration operations</h1>
-    <div ng-controller="dataController as data">
+    <div ng-controller="dataController">
+        {{dataList}}
+        <ul ng-repeat="user in serverData"> <li>{{user}}</li> </ul>
         <div class="gridStyle" ng-grid="gridOptions"></div>
     </div>
+
 </div>
 
